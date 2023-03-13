@@ -15,6 +15,10 @@ sudo docker exec -it cs232 /bin/bash
 ```
 
 ## Working inside the docker container
+---------------------------------------------------------------------------------------------------
+Go through the README inside the `champsim/Champsim` folder to know more 
+---------------------------------------------------------------------------------------------------
+
 * A few sample programs are provided in the `/champsim/programs` folder
 * compile them as follows:
 ```
