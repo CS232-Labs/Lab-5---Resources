@@ -21,3 +21,4 @@ Execute `vtune-gui` to start the profiler
 ## Getting Started
 - Pro Tip: Run Performance Snapshot first to get a view of what is the greatest bottleneck
 - Tutorial at [vtune-tutorial.mkv](vtune-tutorial.mkv)
+
