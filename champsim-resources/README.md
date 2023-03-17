@@ -27,7 +27,7 @@ g++ -o <binary-file> <program-file>
 * Setting up the pin tool: Navigate to `/champsim/ChampSim/tracer` folder and run `./make_tracer.sh`. A folder named `obj-intel64` would've been created.
 * Navigate to the `/champsim/pin_v3.17` folder, and run:
 ```
-./pin -t /champsim/ChampSim/tracer/obj-intel64/champsim-tracer.so -o /champsim/traces/<trace-name>.trace -- /champsim/programs/<binary-file>
+./pin -t /champsim/ChampSim/tracer/obj-intel64/champsim_tracer.so -o /champsim/traces/<trace-name>.trace -- /champsim/programs/<binary-file>
 ```
 There are few more options to the above command, you can look at them in the docs.
 * Navigate to the `/champsim/traces` folder, and run the following command:
