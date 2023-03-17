@@ -1,4 +1,4 @@
-# Champsim Resources
+# ChampSim Resources
 
 ## Installation
 
@@ -16,7 +16,7 @@ sudo docker exec -it cs232 /bin/bash
 
 ## Working inside the docker container
 ---------------------------------------------------------------------------------------------------
-Go through the README inside the `champsim/Champsim` folder to know more 
+Go through the README inside the `champsim/ChampSim` folder to know more 
 ---------------------------------------------------------------------------------------------------
 
 * A few sample programs are provided in the `/champsim/programs` folder
@@ -24,17 +24,17 @@ Go through the README inside the `champsim/Champsim` folder to know more
 ```
 g++ -o <binary-file> <program-file>
 ``` 
-* Setting up the pin tool: Navigate to `/champsim/Champsim/tracer` folder and run `./make_tracer.sh`. A folder named `obj-intel64` would've been created.
+* Setting up the pin tool: Navigate to `/champsim/ChampSim/tracer` folder and run `./make_tracer.sh`. A folder named `obj-intel64` would've been created.
 * Navigate to the `/champsim/pin_v3.17` folder, and run:
 ```
-./pin -t /champsim/Champsim/tracer/obj-intel64/champsim-tracer.so -o /champsim/traces/<trace-name>.trace -- /champsim/programs/<binary-file>
+./pin -t /champsim/ChampSim/tracer/obj-intel64/champsim-tracer.so -o /champsim/traces/<trace-name>.trace -- /champsim/programs/<binary-file>
 ```
 There are few more options to the above command, you can look at them in the docs.
 * Navigate to the `/champsim/traces` folder, and run the following command:
 ```
 xz -z9v <trace-name>.trace
 ```
-* Navigate to the `/champsim/Champsim` folder, and run:
+* Navigate to the `/champsim/ChampSim` folder, and run:
 ```
 ./build_champsim.sh [branch_pred] [l1i_pref] [l1d_pref] [l2c_pref] [llc_pref] [llc_repl] [num_core]
 ```
