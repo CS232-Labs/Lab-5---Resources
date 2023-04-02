@@ -47,7 +47,7 @@ Here, the options are for the L1I, L1D, L2, LLC prefetchers and the LLC replacem
 ./run_champsim.sh [BINARY] [N_WARM] [N_SIM] [TRACE] [OPTION]
 ```
   * The binary is inside the bin folder, just provide the name of the binary(don't give the absolute path) 
-  * N_WARM and N_SIM are in units of 10M 
+  * N_WARM and N_SIM are in units of ~~10M~~ `1M`
   * The trace __should be__ inside the traces folder, just provide the name of the trace(don't give the absolute path) 
   * Look at `run_champsim.sh` to tweak and make your own changes
 * There will be a `results-<num>M` folder created, which contains the results of the trace. Make sure to save these results to your machine, as it gets overwritten everytime.
